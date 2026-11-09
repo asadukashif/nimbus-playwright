@@ -1,0 +1,39 @@
+{
+  "name": "hyper-sdk-playwright",
+  "version": "1.0.0-beta.19",
+  "description": "",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "type": "module",
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "src/**/*.js",
+    "src/**/*.d.ts",
+    "!src/**/*-test.*",
+    "README.md",
+    "LICENSE"
+  ],
+  "exports": {
+    ".": {
+      "import": "./index.js",
+      "types": "./index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@playwright/test": "^1.54.1",
+    "hyper-sdk-js": "^5.1.0",
+    "tsx": "^4.21.0"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2"
+  }
+}
